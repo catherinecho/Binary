@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class binaryConversion {
+public class Main {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("1 for binary to decimal. 2 for decimal to binary");
@@ -21,10 +21,10 @@ public class binaryConversion {
       return 0; 
     }
 		long ans = 0;
-		long n = bin.length();
+		long n = bin.length()-1;
 		char a = bin.charAt(0);
 		bin = bin.substring(1);
-		if(a == '0') {
+		if(a == '1') {
 			ans = (long)Math.pow(2, n);
 		}
 		return(ans += binaryToDecimal(bin));
