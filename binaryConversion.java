@@ -13,7 +13,11 @@ public class Main {
 			System.out.println("Enter decimal number: ");
 			String d = in.nextLine();
       long dec = Long.parseLong(d);
-			System.out.println("binary: " + decimalToBinary(dec));
+      if (dec == 0){
+        System.out.println("0"); 
+      }else{
+        System.out.println("binary: " + decimalToBinary(dec));
+      }
 		}
 	}
 	public static long binaryToDecimal(String bin) {
